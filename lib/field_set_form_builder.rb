@@ -2,7 +2,7 @@
 # Field Set Form Builder
 # by Nicholas Cancelliere (www.ozmox.com)
 #
-# Copyright (c) 2006-2008, Michael Schuerig, michael@schuerig.de
+# Copyright (c) 2009
 #
 # Permission is hereby granted, free of charge, to any person obtaining
 # a copy of this software and associated documentation files (the
