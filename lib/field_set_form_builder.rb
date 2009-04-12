@@ -25,7 +25,7 @@
 #++
 
 # create a +label+ and +input+ fieldset, wrapped inside a div tag, for use with forms
-# also includes placing error messages next to input as a span (use CSS to make it pretty)
+# also includes placing error messages next to input
 class FieldSetFormBuilder < ActionView::Helpers::FormBuilder
   
   REQUIRED_MARK = ' *'
