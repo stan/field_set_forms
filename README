@@ -5,7 +5,7 @@ A simple plugin that makes forms so much easier to deal with.
 
   * Automatically marks fields as required (based on validates_presence_of ala validation_reflection, included)
   * Humanizes and titleizes labels based on column names (first_name becomes 'First Name')
-  * Fully stylable fields with errors and includes error messages in-line
+  * Includes error messages in-line
   * Comes with a clean and simple style out of the box (so you can install hit the ground running)
   * Global reassignment of the required mark (defaults to *, but you can make it anything, even an image)
 
