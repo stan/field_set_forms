@@ -25,6 +25,6 @@ unless File.exist?("#{RAILS_ROOT}/public/stylesheets/fieldset_forms.css")
   	display: inline;
   }
 END
-    f.puts content
+    f.puts css_content
   end
 end
