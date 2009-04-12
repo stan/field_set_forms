@@ -1,0 +1,52 @@
+Field Set Forms
+========
+
+A simple plugin that makes forms so much easier to deal with.
+
+  * Automatically marks fields as required (based on validates_presence_of ala validation_reflection, included)
+  * Humanizes and titlizes labels based on ActiveRecord column names (first_name becomes 'First Name')
+  * Automatically styles fields with errors and includes error messages in-line
+  * Comes with a clean and simple style out of the box (so you can install hit the ground running or modify if you like)
+  * Global reassignment of the required mark (defaults to *, but you can make it anything, even an image)
+
+
+
+Customize the Required Marker
+=======
+
+If you don't like the default * you can easily override the required marker.  Just add to your environment.rb:
+
+  FieldSetFormBuilder::REQUIRED_MARK = ' (*)'    
+  
+      or
+    
+  FieldSetFormBuilder::REQUIRED_MARK = "<img src='/images/require-bullet.png' />"  # use image instead of string-character   
+
+
+
+Customize a Fieldset's Lable
+=======
+
+If you don't like the outcome the humanization of labels you can override them:
+
+  <%= f.text_field :with_a_reallyugly_column_name, :label => 'Ugly column' %>
+  
+If you do not wish to have a column be titleized you can do:
+
+  <%= f.text_field :do_you_want_doughnuts, :titleize => false %>
+
+
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Copyright (c) 2009 Nicholas Cancelliere (www.ozmox.com)
+
+validation_reflection Plugin Copyright (c) 2006-2008, Michael Schuerig
+
+
