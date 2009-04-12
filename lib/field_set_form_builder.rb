@@ -63,7 +63,7 @@ class FieldSetFormBuilder < ActionView::Helpers::FormBuilder
   def error_message(field, options)
     if has_errors_on?(field)
       errors = object.errors.on(field)
-      errors.is_a?(Array) ? errors.to_sentance : errors
+      errors.is_a?(Array) ? errors.to_sentence : errors
     else
       ''
     end    
