@@ -19,9 +19,9 @@ Example model:
       validates_presence_of :last_name, :date_of_birth, :email
     end
 
-Example form_for (note use of FieldSetFormBuilder):
+Example fieldset_form_for:
 
-    <% form_for(@contact, :builder => FieldSetFormBuilder) do |f| %>
+    <% fieldset_form_for @contact do |f| %>
         <%= f.text_field :first_name %>
         <%= f.text_field :last_name %>
         <%= f.text_field :email, :label => 'E-mail' %>
@@ -96,7 +96,6 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 field_set_form_builder Copyright (c) 2009 Nicholas Cancelliere (www.ozmox.com)
-
 validation_reflection  Copyright (c) 2006-2008, Michael Schuerig
 
 
